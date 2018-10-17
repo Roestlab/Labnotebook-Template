@@ -12,10 +12,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[12pt]{report}
-%\usepackage{csvsimple}
 %% Sets page size and margins
 \usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=2.0cm]{geometry}
-% \usepackage[myheadings]{fullpage}
 \usepackage{fancyhdr}
 \usepackage{framed}
 \usepackage{lastpage}
@@ -111,11 +109,15 @@
 \section{Week 1: January}
 \subsection{January 1}
 
+\textbf{Experiment A}:
 There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.
-There is another theory which states that this has already happened. \todo{important note to remember this later}
+There is another theory which states that this has already happened. \todo{important note to remember this later (Friday).}
+
+\textbf{Conclusions}: More data is required, no conclusion yet.
 
 \subsection{January 2}
 
+\textbf{Experiment B}: 
 The density profile follows an $r^{-3/2}$ power law. To avoid a singularity at the center, an interpolation is done over a radius. This inner radius is defined in the parameter file. It should follow the prescription of a singular isothermal sphere (see Binney \& Tremaine p.305), which is also the definition of the King radius:
 \begin{equation}
 r_0 \equiv \sqrt{\frac{9\sigma^2}{4\pi G\rho_0}}
@@ -128,9 +130,10 @@ c_s = \sqrt{\frac{k_b T}{\mu m_p}}
 \end{equation}
 I'm unsure why a factor of $\gamma$ was not included. For 30 K, this gives a sound speed of about 34000 cm/s or 0.34 km/s. At a Mach number of 5, this gives a supersonic dispersion of $\sigma$ = 1.7 km/s
 
+\textbf{Conclusions}: Experiment is consistent with our expectations, should present to PI
 
 \subsection{January 3}
-
+\textbf{Experiment C}: 
 A small bash script:
 
 \begin{minted}[fontsize=\footnotesize]{bash}
@@ -149,5 +152,7 @@ import pyopenms
 exp = pyopenms.MSExperiment()
 pyopenms.MzMLFile().store("testfile.mzML", exp)
 \end{minted}
+
+\textbf{Conclusions}: Needs additional work tomorrow, then check into git! 
 
 \end{document}
